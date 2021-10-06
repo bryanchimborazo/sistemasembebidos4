@@ -15,7 +15,7 @@ function PULSA_2(){
 	message = new Paho.MQTT.Message("1");
     	message.destinationName = "bryan.chimborazo@unach.edu.ec/Topico1";
     	client.send(message);
-	//document.getElementById("sensor1").innerHTML="PULSA2";
+	document.getElementById("sensor1").innerHTML="PULSA2";
 }
 
 
