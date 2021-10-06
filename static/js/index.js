@@ -3,7 +3,7 @@
 function PULSA_1() {
 	//alert("PULSA1");
 	console.log("led on");
-	document.getElementById("sensor").innerHTML="PULSA1";
+	//document.getElementById("sensor").innerHTML="PULSA1";
 	message = new Paho.MQTT.Message("6/10/2021");
     	message.destinationName = "bryan.chimborazo@unach.edu.ec/Topico1";
     	client.send(message);
@@ -15,7 +15,7 @@ function PULSA_2(){
 	message = new Paho.MQTT.Message("1");
     	message.destinationName = "bryan.chimborazo@unach.edu.ec/Topico1";
     	client.send(message);
-	document.getElementById("sensor1").innerHTML="PULSA2";
+	//document.getElementById("sensor1").innerHTML="PULSA2";
 }
 
 
